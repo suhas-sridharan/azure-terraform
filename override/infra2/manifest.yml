@@ -1,0 +1,5 @@
+applications:
+- name: PCF_OVERRIDE_INFRA2
+  memory: ((PCF_APP_MEMORY_INFRA2))
+  instances : ((INSTANCEST_INFRA2))
+  random-route: true

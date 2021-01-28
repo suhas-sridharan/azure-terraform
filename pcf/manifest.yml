@@ -1,0 +1,5 @@
+applications:
+- name: PCF_DOCKER_FULL_PATH_PUBLIC
+  memory: 400M
+  instances : 1
+  random-route: true

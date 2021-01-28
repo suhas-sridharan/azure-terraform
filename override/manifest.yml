@@ -1,0 +1,5 @@
+applications:
+- name: PCF_OVERRIDE_TEST
+  memory: ((PCF_APP_MEMORYT))
+  instances : ((INSTANCEST))
+  random-route: true
