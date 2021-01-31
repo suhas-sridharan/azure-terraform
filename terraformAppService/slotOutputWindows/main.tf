@@ -19,12 +19,12 @@ provider "azurerm" {
 }
 
 resource "azurerm_resource_group" "main" {
-  name     = "anil-terraform-resourceGroup-test"
+  name     = "suhas-terraform-resourceGroup-test"
   location = "West Europe"
 }
 
 resource "azurerm_app_service_plan" "main" {
-  name                = "AppServicePlan-Terraform-test"
+  name                = "suhas-AppServicePlan-Terraform-test-windowss"
   location            = azurerm_resource_group.main.location
   resource_group_name = azurerm_resource_group.main.name
   kind                = "Windows"
@@ -37,7 +37,7 @@ resource "azurerm_app_service_plan" "main" {
 }
 
 resource "azurerm_app_service" "main" {
-  name                = "WebApp-Terraform-test"
+  name                = "suhas-WebApp-Terraform-test"
   location            = azurerm_resource_group.main.location
   resource_group_name = azurerm_resource_group.main.name
   app_service_plan_id = azurerm_app_service_plan.main.id
